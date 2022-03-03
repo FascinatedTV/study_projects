@@ -1,5 +1,9 @@
+from LogicConverter import convertTerm
+from LogicOperations import LogicalOperator
 
-class LogicCalculator:
-    def __init__(self) -> None:
-        pass
+def generateTable(term:str):
+    convertedTerm = convertTerm(term)
+    variables = getVariables(term)
+    
+
 

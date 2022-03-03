@@ -93,7 +93,7 @@ class Not(LogicalOperator):
         return not self.identity.calculateValue()
     
     def __str__(self) -> str:
-        return f"-{self.identity}"
+        return f"!{self.identity}"
 
 if __name__ == '__main__':
     # Test Ausdruck: -a v (b -> c ^ -a)
@@ -101,6 +101,7 @@ if __name__ == '__main__':
     a = Variable("a")
     b = Variable("b")
     c = Variable("c")
+
 
     term = Or(
         Not(Identity(a)),
